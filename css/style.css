@@ -1065,7 +1065,7 @@ strong {
 }
 .Main__Container {
   background: #fff;
-  color: #fff;
+  color: #397837;
   margin-bottom: 50px;
   margin-top: 60px;
   padding: 15px;
@@ -1111,7 +1111,7 @@ strong {
 }
 article {
   background: #fff;
-  color: #fff;
+  color: #397837;
   margin-bottom: 50px;
   -webkit-box-shadow: 0 0 16px rgba(0,0,0,0.3);
   box-shadow: 0 0 16px rgba(0,0,0,0.3);
@@ -1131,7 +1131,7 @@ article header .title {
   line-height: 1.1;
 }
 article header .title a {
-  color: #fff;
+  color: #397837;
 }
 article header .title a.link:after {
   content: '\f08e';
@@ -1301,7 +1301,7 @@ article .entry-content blockquote footer a {
   text-decoration: underline;
 }
 article .entry-content blockquote footer a:hover {
-  color: #fff;
+  color: #397837;
 }
 article .entry-content .pullquote {
   float: right;
@@ -1571,7 +1571,7 @@ article .entry-content .sharing iframe {
 .archives {
   background: #fff;
   border: 1px solid #ddd;
-  color: #fff;
+  color: #397837;
   margin-bottom: 50px;
   -webkit-box-shadow: 0 0 16px rgba(0,0,0,0.3);
   box-shadow: 0 0 16px rgba(0,0,0,0.3);
@@ -1631,7 +1631,7 @@ article .entry-content .sharing iframe {
   line-height: 1.1;
 }
 .archives article .title a {
-  color: #fff;
+  color: #397837;
 }
 .archives article footer {
   color: #999;
