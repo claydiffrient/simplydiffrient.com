@@ -1070,6 +1070,12 @@ strong {
   margin-top: 60px;
   padding: 15px;
 }
+.LastPost {
+  background: #fff;
+}
+.LastPost__Header a {
+  color: #397837;
+}
 .Header {
   background: #397837;
   height: 75px;
