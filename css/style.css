@@ -1082,6 +1082,10 @@ strong {
   padding-top: 40px;
   color: #fff;
 }
+.Header__Logo {
+  width: 7%;
+  margin-top: -33px;
+}
 #header {
   height: 150px;
 }
