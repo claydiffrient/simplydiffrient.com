@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: "Simply Diffrient - Clay Diffrient"
   },
-  plugins: ['gatsby-plugin-react-helmet'],
-}
+  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-glamor"]
+};
