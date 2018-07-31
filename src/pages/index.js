@@ -1,5 +1,5 @@
 import React from "react";
-import { green, white } from "../utils/variables";
+import { green, white, lighterGreen } from "../utils/variables";
 import logo from "../assets/logo.svg";
 import mosk from "../assets/mosk-ultra-bold.ttf";
 import clay from "../assets/clay.jpg";
@@ -26,7 +26,14 @@ css.global("@font-face", {
 });
 
 const linkListStyles = {
-  textDecoration: "none"
+  textDecoration: "none",
+  color: green,
+  "&:hover, &:focus": {
+    textDecoration: "underline"
+  },
+  "&:visited": {
+    color: lighterGreen
+  }
 };
 
 const listItemStyle = { display: "inline", margin: "1rem" };
@@ -162,7 +169,7 @@ const IndexPage = () => (
           </li>
           <li css={listItemStyle}>
             <a css={linkListStyles} href="https://twitter.com/claydiffrient">
-              <FontAwesomeIcon icon={faTwitter} /> LinkedIn
+              <FontAwesomeIcon icon={faTwitter} /> Twitter
             </a>
           </li>
           <li css={listItemStyle}>
