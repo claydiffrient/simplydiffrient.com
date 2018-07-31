@@ -1,33 +1,82 @@
 import React from "react";
 import { Link } from "gatsby";
+import { green, white, defaultBtn, activeLinkStyles } from "../utils/variables";
+import logo from "../assets/logo.svg";
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: "#397837",
-      marginBottom: "1.45rem"
+  <header
+    css={{
+      backgroundColor: white,
+      padding: "0 2rem 0",
+      color: green,
+      display: "grid",
+      gridTemplateColumns: "0.5fr 1fr",
+      gridTemplateRows: "1fr",
+      gridTemplateAreas: `"logo nav"`,
+      justifyItems: "center"
     }}
   >
     <div
-      style={{
-        margin: "0 auto",
-        maxWidth: 960,
-        padding: "1.45rem 1.0875rem"
+      css={{
+        gridArea: "logo",
+        flexDirection: "row",
+        display: "flex",
+        justifyContent: "flex-start",
+        justifySelf: "start"
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: "white",
-            textDecoration: "none"
+      <Link
+        exact
+        to="/"
+        css={{
+          textDecoration: "none",
+          color: green,
+          display: "flex",
+          flexDirection: "row",
+          "&:hover": {
+            textDecoration: "underline"
+          }
+        }}
+      >
+        <img
+          src={logo}
+          alt=""
+          css={{
+            height: "auto",
+            width: "4.25vw",
+            display: "inline-block",
+            marginBottom: 0,
+            marginRight: "1em"
+          }}
+        />
+        <h1
+          css={{
+            fontSize: "3vw",
+            fontFamily: "Mosk",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            marginBottom: 0
           }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
+          simply diffrient
+        </h1>
+      </Link>
     </div>
-  </div>
+    <div
+      css={{
+        gridArea: "nav",
+        display: "flex",
+        justifyContent: "start",
+        justifySelf: "start",
+        alignItems: "center"
+      }}
+    >
+      <Link css={defaultBtn} to="/idet" activeStyle={activeLinkStyles}>
+        IDET
+      </Link>
+    </div>
+  </header>
 );
 
 export default Header;
