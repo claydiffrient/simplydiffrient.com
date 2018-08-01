@@ -22,6 +22,7 @@ const ObjectiveFive = () => (
     </p>
     <h4>Artifact</h4>
     <iframe
+      title="Decision Making Matrix - SMART Board 7000"
       css={{
         width: "100%"
       }}
