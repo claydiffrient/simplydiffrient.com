@@ -6,19 +6,23 @@
  */
 
 // modules
-var static = require( 'node-static' ),
-    port = 8080,
-    http = require( 'http' );
+var static = require("node-static"),
+  port = 8080,
+  http = require("http");
 
 // config
-var file = new static.Server( './public', {
-    cache: 3600,
-    gzip: true
-} );
+var file = new static.Server("./public", {
+  cache: 31536000,
+  gzip: true
+});
 
 // serve
-http.createServer( function ( request, response ) {
-    request.addListener( 'end', function () {
-        file.serve( request, response );
-    } ).resume();
-} ).listen( port );
+http
+  .createServer(function(request, response) {
+    request
+      .addListener("end", function() {
+        file.serve(request, response);
+      })
+      .resume();
+  })
+  .listen(port);
