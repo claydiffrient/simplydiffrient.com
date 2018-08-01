@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Helmet from "react-helmet";
-import { linkStyles, defaultBtn } from "../utils/variables";
+import { defaultBtn } from "../utils/variables";
 import Link from "gatsby-link";
 
 const IDET = () => (

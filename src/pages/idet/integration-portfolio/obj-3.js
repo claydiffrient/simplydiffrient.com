@@ -1,14 +1,7 @@
 import React from "react";
 import Layout from "../../../components/layout";
 import Helmet from "react-helmet";
-import { linkStyles, defaultBtn } from "../../../utils/variables";
-import Link from "gatsby-link";
-
-const navBtnStyle = {
-  ...defaultBtn,
-  fontSize: "0.9em",
-  width: "100%"
-};
+import IntegrationNav from "../../../components/integration-nav";
 
 const ObjectiveThree = () => (
   <Layout>
@@ -18,6 +11,7 @@ const ObjectiveThree = () => (
       </title>
     </Helmet>
     <h2>Integration of Educational Technology Portfolio</h2>
+    <IntegrationNav />
     <h3>
       Objective 3: Build a personal educational technology integration portfolio
       with evidence and artifacts.
