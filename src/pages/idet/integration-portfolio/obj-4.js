@@ -41,7 +41,7 @@ const ObjectiveFour = () => (
             height: "auto"
           }}
           src={ryanResponseToClay}
-          alt="Example image of a discussion where Ryan responds to Clay"
+          alt="Example of a discussion where Ryan responds to Clay"
         />
       </div>
       <div
@@ -55,7 +55,7 @@ const ObjectiveFour = () => (
             height: "auto"
           }}
           src={clayResponseToKyle}
-          alt="Example image of a discussion where Clay responds to Kyle"
+          alt="Example of a discussion where Clay responds to Kyle"
         />
       </div>
     </div>
