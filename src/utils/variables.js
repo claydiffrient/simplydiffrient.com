@@ -24,3 +24,14 @@ export const activeLinkStyles = {
   backgroundColor: green,
   color: white
 };
+
+export const linkStyles = {
+  textDecoration: "none",
+  color: green,
+  "&:hover, &:focus": {
+    textDecoration: "underline"
+  },
+  "&:visited": {
+    color: lighterGreen
+  }
+};
