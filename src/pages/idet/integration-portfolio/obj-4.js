@@ -21,7 +21,7 @@ const ObjectiveFour = () => (
     </h3>
     <p>
       I can successfully participate and use online learning environments to
-      communicate my ideas and learn from others' ideas effectively
+      communicate my ideas and learn from others' ideas effectively.
     </p>
     <h4>Artifact</h4>
     <div
