@@ -2,9 +2,10 @@ import React from "react";
 import { green, white, lighterGreen } from "../utils/variables";
 import logo from "../assets/logo.svg";
 import mosk from "../assets/mosk-ultra-bold.ttf";
-import clay from "../assets/clay.jpg";
 import { css } from "glamor";
 import Link from "gatsby-link";
+import Img from "gatsby-image";
+import { graphql } from "gatsby";
 import "../components/layout.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -89,7 +90,7 @@ const IndexHeader = () => (
   </header>
 );
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <>
     <IndexHeader />
     <main
@@ -118,8 +119,8 @@ const IndexPage = () => (
         }}
       >
         <div css={{ gridArea: "image" }}>
-          <img
-            src={clay}
+          <Img
+            fluid={data.clayImg.childImageSharp.fluid}
             alt="Clay Diffrient"
             css={{
               height: "auto",
@@ -204,3 +205,17 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
+
+export const query = graphql`
+  query IndexQuery {
+    clayImg: file(name: { eq: "clay" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 250) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
