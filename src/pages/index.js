@@ -4,6 +4,7 @@ import logo from "../assets/logo.svg";
 import mosk from "../assets/mosk-ultra-bold.ttf";
 import clay from "../assets/clay.jpg";
 import { css } from "glamor";
+import Link from "gatsby-link";
 import "../components/layout.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -133,9 +134,12 @@ const IndexPage = () => (
               fontSize: "1.2em"
             }}
           >
-            I am a father, a husband, a Mormon, a software engineer, an
-            instructional designer, a educational technologist, a student, and
-            an accessibility advocate.
+            I am{" "}
+            <Link to="/father" css={linkListStyles}>
+              a father
+            </Link>, a husband, a Mormon, a software engineer, an instructional
+            designer, a educational technologist, a student, and an
+            accessibility advocate.
           </p>
         </div>
       </div>
