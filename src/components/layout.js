@@ -33,7 +33,9 @@ const Layout = ({ children, data }) => (
                 "clay diffrient, software, programming, edtech, instructional design"
             }
           ]}
-        />
+        >
+          <html lang="en" />
+        </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main
           css={{

@@ -6,6 +6,7 @@ import { css } from "glamor";
 import Link from "gatsby-link";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
+import Helmet from "react-helmet";
 import "../components/layout.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -92,6 +93,22 @@ const IndexHeader = () => (
 
 const IndexPage = ({ data }) => (
   <>
+    <Helmet
+      title="Simply Diffrient - Clay Diffrient"
+      meta={[
+        {
+          name: "description",
+          content: "Personal website of Clay Diffrient"
+        },
+        {
+          name: "keywords",
+          content:
+            "clay diffrient, software, programming, edtech, instructional design"
+        }
+      ]}
+    >
+      <html lang="en" />
+    </Helmet>
     <IndexHeader />
     <main
       css={{
