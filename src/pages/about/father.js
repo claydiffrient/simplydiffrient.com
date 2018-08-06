@@ -12,7 +12,7 @@ const Father = ({ data }) => (
     <>
       <h2>I'm a Father</h2>
       <p>
-        >This is a picture of me and my two boys. They are two of the most
+        This is a picture of me and my two boys. They are two of the most
         precious people in my life. They each have their own personalities, and
         I'm honorored to be their dad. I've learned so much from them! I'm now
         in the know about Paw Patrol, Blippi, and even PJ Masks.
