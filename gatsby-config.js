@@ -15,6 +15,19 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-glamor",
-    "gatsby-plugin-sitemap"
+    "gatsby-plugin-sitemap",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Simply Diffrient - Clay Diffrient",
+        short_name: "SimplyDiffrient",
+        start_url: "/",
+        background_color: "#397837",
+        theme_color: "#397837",
+        display: "browser",
+        icon: "src/assets/logo.svg" // This path is relative to the root of the site.
+      }
+    },
+    "gatsby-plugin-offline"
   ]
 };
