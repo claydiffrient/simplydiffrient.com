@@ -22,4 +22,4 @@ COPY CHECKS /app/CHECKS
 RUN npm run build
 
 
-CMD ["dumb-init", "tail", "-f", "/dev/null"]
+CMD ["dumb-init", "npm", "start"]
