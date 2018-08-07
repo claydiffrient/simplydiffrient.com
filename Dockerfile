@@ -17,7 +17,7 @@ RUN dpkg -i dumb-init_*.deb
 
 COPY . ${APP_HOME}
 
-RUN npm run build
+# RUN npm run build
 
 
-CMD ["dumb-init", "npm", "start"]
+CMD ["dumb-init", "cat"]
