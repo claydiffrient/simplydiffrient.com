@@ -20,4 +20,4 @@ COPY . ${APP_HOME}
 # RUN npm run build
 
 
-CMD ["dumb-init", "cat"]
+CMD ["dumb-init", "tail", "-f", "/dev/null"]
