@@ -17,6 +17,8 @@ RUN dpkg -i dumb-init_*.deb
 
 COPY . ${APP_HOME}
 
+COPY CHECKS /app/CHECKS
+
 # RUN npm run build
 
 
