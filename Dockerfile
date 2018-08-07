@@ -19,7 +19,7 @@ COPY . ${APP_HOME}
 
 COPY CHECKS /app/CHECKS
 
-# RUN npm run build
+RUN npm run build
 
 
 CMD ["dumb-init", "tail", "-f", "/dev/null"]
