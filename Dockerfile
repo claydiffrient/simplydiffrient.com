@@ -9,9 +9,11 @@ COPY . ${APP_HOME}
 RUN npm run build
 
 FROM alpine:latest
+ARG CERT_DIRECTORY
 EXPOSE 8080
 COPY --from=build /usr/src/app/public /app/public
 COPY CHECKS /app/CHECKS
 RUN apk add --no-cache nginx
 ADD nginx.conf /
+ADD ${CERT_DIRECTORY} /app/tls
 ENTRYPOINT ["nginx", "-c",  "/nginx.conf"]
