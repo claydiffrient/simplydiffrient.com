@@ -1,8 +1,10 @@
-version: '3'
+version: "3"
 services:
   web:
     build: .
     ports:
       - "8080:8080"
     environment:
-      VIRTUAL_HOST: 'sd.docker'
+      VIRTUAL_HOST: "sd.docker"
+    volumes:
+      - ./keys:/app/tls

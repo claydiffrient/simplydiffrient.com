@@ -15,5 +15,4 @@ COPY --from=build /usr/src/app/public /app/public
 COPY CHECKS /app/CHECKS
 RUN apk add --no-cache nginx
 ADD nginx.conf /
-ADD ${CERT_DIRECTORY} /app/tls
 ENTRYPOINT ["nginx", "-c",  "/nginx.conf"]
