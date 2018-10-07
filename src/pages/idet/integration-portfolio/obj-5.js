@@ -29,8 +29,8 @@ const ObjectiveFive = () => (
       src="https://clay.app.box.com/embed/s/tedjfa5h98dvrozkg5s0y3rcfq9v6v2a"
       width="800"
       height="550"
-      frameborder="0"
-      allowfullscreen
+      frameBorder="0"
+      allowFullScreen
       webkitallowfullscreen
       msallowfullscreen
     />

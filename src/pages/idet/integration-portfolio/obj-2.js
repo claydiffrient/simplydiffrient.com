@@ -29,8 +29,8 @@ const ObjectiveTwo = () => (
       src="https://clay.app.box.com/embed/s/6sbozh1paz7rbwkckowantmfnle8fybf"
       width="500"
       height="400"
-      frameborder="0"
-      allowfullscreen
+      frameBorder="0"
+      allowFullScreen
       webkitallowfullscreen
       msallowfullscreen
     />

@@ -28,8 +28,8 @@ const ObjectiveOne = () => (
       src="https://clay.app.box.com/embed/s/xcikhugyal2th42os92hnoag9h8swe8n"
       width="500"
       height="400"
-      frameborder="0"
-      allowfullscreen
+      frameBorder="0"
+      allowFullScreen
       webkitallowfullscreen
       msallowfullscreen
     />
