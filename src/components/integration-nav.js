@@ -23,58 +23,51 @@ export default function IntegrationNav() {
         css={btnStyles}
         activeStyle={activeLinkStyles}
         to="/idet/integration-portfolio"
-        exact
       >
-        Portfolio Home
-      </Link>
+        Portfolio Home{" "}
+      </Link>{" "}
       <Link
         css={btnStyles}
         activeStyle={activeLinkStyles}
         to="/idet/integration-portfolio/obj-1"
-        exact
       >
-        Objective 1
-      </Link>
+        Objective 1{" "}
+      </Link>{" "}
       <Link
         css={btnStyles}
         activeStyle={activeLinkStyles}
         to="/idet/integration-portfolio/obj-2"
-        exact
       >
-        Objective 2
-      </Link>
+        Objective 2{" "}
+      </Link>{" "}
       <Link
         css={btnStyles}
         activeStyle={activeLinkStyles}
         to="/idet/integration-portfolio/obj-3"
-        exact
       >
-        Objective 3
-      </Link>
+        Objective 3{" "}
+      </Link>{" "}
       <Link
         css={btnStyles}
         activeStyle={activeLinkStyles}
         to="/idet/integration-portfolio/obj-4"
-        exact
       >
-        Objective 4
-      </Link>
+        Objective 4{" "}
+      </Link>{" "}
       <Link
         css={btnStyles}
         activeStyle={activeLinkStyles}
         to="/idet/integration-portfolio/obj-5"
-        exact
       >
-        Objective 5
-      </Link>
+        Objective 5{" "}
+      </Link>{" "}
       <Link
         css={btnStyles}
         activeStyle={activeLinkStyles}
         to="/idet/integration-portfolio/obj-6"
-        exact
       >
-        Objective 6
-      </Link>
+        Objective 6{" "}
+      </Link>{" "}
     </nav>
   );
 }

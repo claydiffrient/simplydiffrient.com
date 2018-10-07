@@ -48,7 +48,7 @@ const Header = ({ siteTitle }) => (
             marginBottom: 0,
             marginRight: "1em"
           }}
-        />
+        />{" "}
         <h1
           css={{
             fontSize: "3vw",
@@ -59,10 +59,10 @@ const Header = ({ siteTitle }) => (
             marginBottom: 0
           }}
         >
-          simply diffrient
-        </h1>
-      </Link>
-    </div>
+          simply diffrient{" "}
+        </h1>{" "}
+      </Link>{" "}
+    </div>{" "}
     <div
       css={{
         gridArea: "nav",
@@ -73,9 +73,9 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <Link css={defaultBtn} to="/idet" activeStyle={activeLinkStyles}>
-        IDET
-      </Link>
-    </div>
+        IDET{" "}
+      </Link>{" "}
+    </div>{" "}
   </header>
 );
 

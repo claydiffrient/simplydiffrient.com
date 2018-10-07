@@ -27,8 +27,9 @@ const IntegrationPortfolio = () => (
     <ul css={{ marginTop: "15px", listStyle: "none" }}>
       <li css={{ listStyle: "unstyled" }}>
         <Link to="/idet/integration-portfolio/obj-1" css={navBtnStyle}>
-          Objective 1: <br />Identify and know how to locate various kinds of
-          technology resources and relate them to the teaching process.
+          Objective 1: <br />
+          Identify and know how to locate various kinds of technology resources
+          and relate them to the teaching process.
         </Link>
       </li>
       <li css={{ listStyle: "unstyled" }}>

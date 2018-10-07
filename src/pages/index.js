@@ -155,7 +155,8 @@ const IndexPage = ({ data }) => (
             I am{" "}
             <Link to="/about/father" css={linkListStyles}>
               a father
-            </Link>, a husband, a Mormon, a software engineer, an instructional
+            </Link>
+            , a husband, a Mormon, a software engineer, an instructional
             designer, a educational technologist, a student, and an
             accessibility advocate.
           </p>
