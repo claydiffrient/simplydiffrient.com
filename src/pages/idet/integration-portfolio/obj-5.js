@@ -37,7 +37,7 @@ const ObjectiveFive = () => (
     <h4>Reflection</h4>
     <p>
       The decision making matrix (DMM) presented above in my artifact is an
-      example of a tool I've learned to use in order to make better decisions
+      example of a tool I’ve learned to use in order to make better decisions
       about technology. It forces me to take an objective look at various
       technologies, and it can help guide me in selecting technologies. In the
       above artifact I used the DMM successfully as an information literacy

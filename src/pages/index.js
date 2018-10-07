@@ -164,15 +164,15 @@ const IndexPage = ({ data }) => (
       </div>
       <div css={{ gridArea: "main" }}>
         <p>
-          I'm a senior software engineer at Instructure. I work on the Canvas
+          I’m a senior software engineer at Instructure. I work on the Canvas
           Core Services team helping architect the front end of the Canvas
           Learning Management System. I am passionate about education &mdash;
-          specifically the application of technology to enhance education! I'm
+          specifically the application of technology to enhance education! I’m
           currently working on a M. Ed. in Instructional Design and Educational
           Technlogy at the University of Utah.
         </p>
         <p>
-          Sometimes I get a little busy and don't post much here or make things
+          Sometimes I get a little busy and don’t post much here or make things
           nicer, but you can find me online at several different places. The
           following list is a good place to start.
         </p>

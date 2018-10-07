@@ -21,7 +21,7 @@ const ObjectiveFour = () => (
     </h3>
     <p>
       I can successfully participate and use online learning environments to
-      communicate my ideas and learn from others' ideas effectively.
+      communicate my ideas and learn from others’ ideas effectively.
     </p>
     <h4>Artifact</h4>
     <div
@@ -65,9 +65,9 @@ const ObjectiveFour = () => (
       of class interactions with our peers. We did weekly discussion posts that
       gave me the opportunity to have discussions with others. We also accessed
       our course information through Canvas. I feel like I definitely know how
-      to use the system effectively. In the artifact section I've included a
-      screenshot of a classmate's response to a post I made. As well as a
-      response that I made on another classmate's post.
+      to use the system effectively. In the artifact section I’ve included a
+      screenshot of a classmate’s response to a post I made. As well as a
+      response that I made on another classmate’s post.
     </p>
     <h4>Goal</h4>
     <p>
