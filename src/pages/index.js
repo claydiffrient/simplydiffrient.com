@@ -3,7 +3,7 @@ import { green, white, lighterGreen } from "../utils/variables";
 import logo from "../assets/logo.svg";
 import mosk from "../assets/mosk-ultra-bold.ttf";
 import { css } from "glamor";
-import Link from "gatsby-link";
+import { Link } from "gatsby";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";

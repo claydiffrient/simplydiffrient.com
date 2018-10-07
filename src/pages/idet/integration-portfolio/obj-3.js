@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../../components/layout";
 import Helmet from "react-helmet";
 import IntegrationNav from "../../../components/integration-nav";
-import Link from "gatsby-link";
+import { Link } from "gatsby";
 import { linkStyles } from "../../../utils/variables";
 
 const ObjectiveThree = () => (
