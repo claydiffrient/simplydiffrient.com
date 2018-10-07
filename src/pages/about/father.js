@@ -3,6 +3,7 @@ import Layout from "../../components/layout";
 import Helmet from "react-helmet";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
+import { object } from "prop-types";
 
 const Father = ({ data }) => (
   <Layout>
@@ -21,6 +22,10 @@ const Father = ({ data }) => (
     </>
   </Layout>
 );
+
+Father.propTypes = {
+  data: object
+};
 
 export default Father;
 

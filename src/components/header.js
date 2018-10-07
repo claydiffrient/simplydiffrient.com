@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { green, white, defaultBtn, activeLinkStyles } from "../utils/variables";
 import logo from "../assets/logo.svg";
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     css={{
       backgroundColor: white,
