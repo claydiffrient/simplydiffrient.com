@@ -3,4 +3,4 @@ node_js:
   - "node"
 script:
   - npm run lint
-  - npm test:ci
+  - npm run test:ci

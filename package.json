@@ -34,6 +34,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
+    "lint": "eslint src/**/*.js",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:ci": "npm run build && start-server-and-test serve http://localhost:9000",
