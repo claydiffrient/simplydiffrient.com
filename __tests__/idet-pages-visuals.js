@@ -13,7 +13,7 @@ describe("IDET", () => {
     await browser.close();
   });
 
-  describe("Index Page", () => {
+  describe.skip("Index Page", () => {
     it.each(RESOLUTIONS)("looks correct at %ix%i", async (width, height) => {
       const page = await browser.newPage();
       page.setViewport({ height, width });
@@ -25,7 +25,7 @@ describe("IDET", () => {
     });
   });
 
-  describe("Integration of Ed Tech", () => {
+  describe.skip("Integration of Ed Tech", () => {
     describe("Index Page", () => {
       it.each(RESOLUTIONS)("looks correct at %ix%i", async (width, height) => {
         const page = await browser.newPage();
@@ -50,7 +50,7 @@ describe("IDET", () => {
     //   });
     // });
 
-    describe("Objective Page with Link Artifact (#3)", () => {
+    describe.skip("Objective Page with Link Artifact (#3)", () => {
       it.each(RESOLUTIONS)("looks correct at %ix%i", async (width, height) => {
         const page = await browser.newPage();
         page.setViewport({ height, width });
@@ -62,7 +62,7 @@ describe("IDET", () => {
       });
     });
 
-    describe("Objective Page with Image Artifact (#4)", () => {
+    describe.skip("Objective Page with Image Artifact (#4)", () => {
       it.each(RESOLUTIONS)("looks correct at %ix%i", async (width, height) => {
         const page = await browser.newPage();
         page.setViewport({ height, width });
