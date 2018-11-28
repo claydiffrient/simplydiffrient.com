@@ -12,7 +12,7 @@ afterAll(async () => {
   await browser.close();
 });
 
-describe("Home Page", () => {
+describe.skip("Home Page", () => {
   it.each(RESOLUTIONS)("looks correct at %ix%i", async (width, height) => {
     const page = await browser.newPage();
     page.setViewport({ height, width });
@@ -22,7 +22,7 @@ describe("Home Page", () => {
   });
 });
 
-describe("Father Page", () => {
+describe.skip("Father Page", () => {
   it.each(RESOLUTIONS)("looks correct at %ix%i", async (width, height) => {
     const page = await browser.newPage();
     page.setViewport({ height, width });
