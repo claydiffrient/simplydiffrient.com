@@ -21,7 +21,9 @@ module.exports = {
     jest: true
   },
   rules: {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/prop-types": "warn",
+    "react/no-unescaped-entities": "off"
   },
   settings: {
     react: {
