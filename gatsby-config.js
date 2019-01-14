@@ -11,7 +11,15 @@ module.exports = {
         path: `${__dirname}/src/assets/`
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/src/posts/`
+      }
+    },
     "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-glamor",
