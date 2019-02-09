@@ -61,7 +61,7 @@
     "gatsby-plugin-sitemap": "2.0.5",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.1.0",
-    "jest-dom": "3.0.1",
+    "jest-dom": "3.0.2",
     "jest-glamor-react": "4.3.1",
     "jest-image-snapshot": "2.7.0",
     "prettier": "1.16.4",
