@@ -1,6 +1,6 @@
 ---
 title: "Fiscal Report"
-date: "2019-01-13"
+date: "2019-01-17"
 category: "utah-legislature-project"
 ---
 
