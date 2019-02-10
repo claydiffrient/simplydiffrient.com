@@ -65,7 +65,7 @@
     "jest-glamor-react": "4.3.1",
     "jest-image-snapshot": "2.8.0",
     "prettier": "1.16.4",
-    "puppeteer": "1.11.0",
+    "puppeteer": "1.12.2",
     "react-test-renderer": "16.8.1",
     "react-testing-library": "5.5.4",
     "start-server-and-test": "1.7.11"
