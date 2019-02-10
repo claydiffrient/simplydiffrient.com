@@ -36,6 +36,7 @@ module.exports = {
         icon: "src/assets/logo.svg" // This path is relative to the root of the site.
       }
     },
+    "gatsby-plugin-react-axe",
     "gatsby-plugin-offline"
   ]
 };
