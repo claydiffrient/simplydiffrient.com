@@ -19,5 +19,5 @@ module.exports = {
     "<rootDir>/loadershim.js",
     "<rootDir>/node_modules/regenerator-runtime/runtime"
   ],
-  setupTestFrameworkScriptFile: "<rootDir>/setup-test-env.js"
+  setupFilesAfterEnv: ["<rootDir>/setup-test-env.js"]
 };
