@@ -5,9 +5,9 @@
   "private": true,
   "author": "Clay Diffrient <clay.diffrient@gmail.com>",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.14",
-    "@fortawesome/free-brands-svg-icons": "5.7.1",
-    "@fortawesome/free-solid-svg-icons": "5.7.1",
+    "@fortawesome/fontawesome-svg-core": "1.2.15",
+    "@fortawesome/free-brands-svg-icons": "5.7.2",
+    "@fortawesome/free-solid-svg-icons": "5.7.2",
     "@fortawesome/react-fontawesome": "0.1.4",
     "babel-eslint": "10.0.1",
     "gatsby": "2.0.119",
