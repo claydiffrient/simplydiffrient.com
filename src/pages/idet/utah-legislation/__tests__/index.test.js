@@ -17,6 +17,9 @@ const mockData = {
             title: "Past The House",
             date: "09 February 2019"
           },
+          fields: {
+            slug: "/2019-02-09-past-the-house/"
+          },
           excerpt:
             "In the time since my last post, a great thing has happened! The bill has\nsuccesfully made it out of the House. Let's look at what has…",
           timeToRead: 1
@@ -29,6 +32,9 @@ const mockData = {
             title: "Fiscal Report",
             date: "17 January 2019"
           },
+          fields: {
+            slug: "/2019-01-22-fiscal-report/"
+          },
           excerpt:
             "The fiscal report came back for H.B. 45. It was made publicly available on\n2019-01-16. I love that this is something that gets put out for…",
           timeToRead: 1
@@ -40,6 +46,9 @@ const mockData = {
           frontmatter: {
             title: "Utah Legislature Kickoff",
             date: "13 January 2019"
+          },
+          fields: {
+            slug: "/2019-01-13-kickoff/"
           },
           excerpt:
             "Today I decided to look into what legislation had been filed on the\n Utah Legislature website  to determine a good one to\ntrack. The Bill I…",

@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../../components/layout";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 const blogPostIndexEntry = {
   backgroundColor: "#efefef",
@@ -23,7 +23,11 @@ const UtahLegislation = ({ data }) => (
     </p>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div css={blogPostIndexEntry} key={node.id}>
-        <h3 css={{ marginBottom: "0.1rem" }}>{node.frontmatter.title}</h3>
+        <h3 css={{ marginBottom: "0.1rem" }}>
+          <Link to={`/idet/utah-legislation/${node.fields.slug}`}>
+            {node.frontmatter.title}
+          </Link>
+        </h3>
         <small>
           {node.frontmatter.date}
           {" - "}
@@ -50,6 +54,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
           timeToRead
