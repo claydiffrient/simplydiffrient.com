@@ -13,7 +13,7 @@ succesfully made it out of the House. Let's look at what has happened.
 ## The Bill Passed the House
 
 On 30 Jan 2019, in a very easy vote the bill passed
-(73-0-2)[https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2019GS&voteid=64&house=H].
+[73-0-2](https://le.utah.gov/DynaBill/svotes.jsp?sessionid=2019GS&voteid=64&house=H).
 
 Rep. Peterson (R-D59) presented the bill and requested support for it. He was
 joined in support by Rep. Derrin Owens (R-D58). Rep. Owens made the case that
