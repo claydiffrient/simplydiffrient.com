@@ -67,7 +67,7 @@
     "jest-axe": "3.1.1",
     "jest-dom": "3.2.2",
     "jest-glamor-react": "4.3.1",
-    "jest-image-snapshot": "2.8.1",
+    "jest-image-snapshot": "2.8.2",
     "prettier": "1.17.1",
     "puppeteer": "1.16.0",
     "react-test-renderer": "16.8.6",
