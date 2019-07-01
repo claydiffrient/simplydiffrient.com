@@ -71,7 +71,7 @@
     "prettier": "1.18.2",
     "puppeteer": "1.18.1",
     "react-test-renderer": "16.8.6",
-    "react-testing-library": "7.0.1",
+    "react-testing-library": "8.0.1",
     "start-server-and-test": "1.9.1"
   },
   "repository": {
