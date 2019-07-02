@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "react-testing-library";
+import { render } from "@testing-library/react";
 import { axe, toHaveNoViolations } from "jest-axe";
 import { StaticQuery } from "gatsby";
 import UtahLegislation from "../index";
