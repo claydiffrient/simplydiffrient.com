@@ -13,7 +13,7 @@ const navBtnStyle = {
 const IntegrationPortfolio = () => (
   <Layout>
     <Helmet>
-      <title>Simply Diffrient - Integration of Ed Tech Portfolio</title>
+      <title>Clay Diffrient - Integration of Ed Tech Portfolio</title>
     </Helmet>
     <h2>Integration of Educational Technology Portfolio</h2>
     <p>

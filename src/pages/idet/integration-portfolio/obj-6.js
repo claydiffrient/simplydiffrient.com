@@ -7,7 +7,7 @@ const ObjectiveSix = () => (
   <Layout>
     <Helmet>
       <title>
-        Simply Diffrient - Integration of Ed Tech Portfolio - Objective 6
+        Clay Diffrient - Integration of Ed Tech Portfolio - Objective 6
       </title>
     </Helmet>
     <h2>Integration of Educational Technology Portfolio</h2>

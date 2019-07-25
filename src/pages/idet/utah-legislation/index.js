@@ -12,7 +12,7 @@ const blogPostIndexEntry = {
 const UtahLegislation = ({ data }) => (
   <Layout>
     <Helmet>
-      <title>Simply Diffrient - Utah Legislation Tracking</title>
+      <title>Clay Diffrient - Utah Legislation Tracking</title>
     </Helmet>
     <h2>Leadership in IDET - Utah Legislature Tracking</h2>
     <p>

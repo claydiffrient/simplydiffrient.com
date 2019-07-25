@@ -14,7 +14,7 @@ const navBtnStyle = {
 const PersonalProductivity = ({ data }) => (
   <Layout>
     <Helmet>
-      <title>Simply Diffrient - Personal Productivity Project</title>
+      <title>Clay Diffrient - Personal Productivity Project</title>
     </Helmet>
     <h2>Personal Productivity Project</h2>
     <p>

@@ -85,7 +85,7 @@ const IndexHeader = () => (
           fontFamily: "Mosk"
         }}
       >
-        simply diffrient
+        clay diffrient
       </h1>
     </div>
   </header>
@@ -94,7 +94,7 @@ const IndexHeader = () => (
 const IndexPage = ({ data }) => (
   <>
     <Helmet
-      title="Simply Diffrient - Clay Diffrient"
+      title="Clay Diffrient"
       meta={[
         {
           name: "description",
@@ -156,20 +156,25 @@ const IndexPage = ({ data }) => (
             <Link to="/about/father" css={linkListStyles}>
               a father
             </Link>
-            , a husband, a Mormon, a software engineer, an instructional
-            designer, a educational technologist, a student, and an
-            accessibility advocate.
+            , a husband,{" "}
+            <a href="https://www.comeuntochrist.org/" css={linkListStyles}>
+              a member of The Church of Jesus Christ of Latter-day Saints{" "}
+            </a>
+            , a software engineer, an instructional designer, an educational
+            technologist, a volunteer teacher, and an accessibility advocate.
           </p>
         </div>
       </div>
       <div css={{ gridArea: "main" }}>
         <p>
           I’m a senior software engineer at Instructure. I work on the Canvas
-          Core Services team helping architect the front end of the Canvas
-          Learning Management System. I am passionate about education &mdash;
-          specifically the application of technology to enhance education! I’m
-          currently working on a M. Ed. in Instructional Design and Educational
-          Technlogy at the University of Utah.
+          Core Services Front End team helping architect the front end of the
+          Canvas Learning Management System. I am passionate about education
+          &mdash; specifically the application of technology to enhance
+          education! I completed a Bachelor's in computer science at Brigham
+          Young University &mdash; Idaho and more recently completed a Master's
+          of Education in Educational Psychology (IDET) at the University of
+          Utah.
         </p>
         <p>
           Sometimes I get a little busy and don’t post much here or make things

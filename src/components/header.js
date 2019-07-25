@@ -59,7 +59,7 @@ const Header = () => (
             marginBottom: 0
           }}
         >
-          simply diffrient{" "}
+          clay diffrient{" "}
         </h1>{" "}
       </Link>{" "}
     </div>{" "}

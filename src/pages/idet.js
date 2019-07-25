@@ -12,7 +12,7 @@ const navButtonStyle = {
 const IDET = () => (
   <Layout>
     <Helmet>
-      <title>Simply Diffrient - IDET</title>
+      <title>Clay Diffrient - IDET</title>
     </Helmet>
     <>
       <h2>Instructional Design and Educational Technology (IDET)</h2>

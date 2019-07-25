@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Simply Diffrient - Clay Diffrient",
+    title: "Clay Diffrient",
     siteUrl: "https://simplydiffrient.com"
   },
   plugins: [
@@ -27,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Simply Diffrient - Clay Diffrient",
-        short_name: "SimplyDiffrient",
+        name: "Clay Diffrient",
+        short_name: "ClayDiffrient",
         start_url: "/",
         background_color: "#397837",
         theme_color: "#397837",
