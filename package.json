@@ -10,7 +10,7 @@
     "@fortawesome/free-solid-svg-icons": "5.10.2",
     "@fortawesome/react-fontawesome": "0.1.4",
     "babel-eslint": "10.0.2",
-    "gatsby": "2.13.76",
+    "gatsby": "2.13.77",
     "gatsby-image": "2.2.12",
     "gatsby-plugin-glamor": "2.1.4",
     "gatsby-plugin-manifest": "2.2.8",
