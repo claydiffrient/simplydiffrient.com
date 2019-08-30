@@ -58,7 +58,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "24.9.0",
     "babel-preset-gatsby": "0.2.11",
-    "eslint": "6.2.2",
+    "eslint": "6.3.0",
     "eslint-config-prettier": "6.1.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.14.3",
