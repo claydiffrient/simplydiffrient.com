@@ -26,7 +26,7 @@
     "react": "16.10.1",
     "react-dom": "16.10.1",
     "react-helmet": "5.2.1",
-    "snyk": "1.230.3"
+    "snyk": "1.230.4"
   },
   "keywords": [
     "gatsby"
