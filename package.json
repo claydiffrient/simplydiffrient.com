@@ -72,7 +72,7 @@
     "prettier": "1.19.1",
     "puppeteer": "2.1.1",
     "react-test-renderer": "16.13.0",
-    "start-server-and-test": "1.10.10"
+    "start-server-and-test": "1.10.11"
   },
   "repository": {
     "type": "git",
