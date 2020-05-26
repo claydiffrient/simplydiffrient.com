@@ -156,10 +156,7 @@ const IndexPage = ({ data }) => (
             <Link to="/about/father" css={linkListStyles}>
               a father
             </Link>
-            , a husband,{" "}
-            <a href="https://www.comeuntochrist.org/" css={linkListStyles}>
-              a member of The Church of Jesus Christ of Latter-day Saints{" "}
-            </a>
+            , a husband,
             , a software engineer, an instructional designer, an educational
             technologist, a volunteer teacher, and an accessibility advocate.
           </p>
