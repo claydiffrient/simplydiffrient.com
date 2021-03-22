@@ -1,7 +1,11 @@
 import puppeteer from "puppeteer";
 
 const SITE_URL = "http://localhost:9000";
-const RESOLUTIONS = [[375, 812], [1024, 768], [1920, 1080]];
+const RESOLUTIONS = [
+  [375, 812],
+  [1024, 768],
+  [1920, 1080],
+];
 
 let browser;
 beforeAll(async () => {
@@ -27,7 +31,7 @@ describe.skip("Father Page", () => {
     const page = await browser.newPage();
     page.setViewport({ height, width });
     await page.goto(`${SITE_URL}/about/father`, {
-      waitUntil: ["networkidle0"]
+      waitUntil: ["networkidle0"],
     });
     const image = await page.screenshot();
     expect(image).toMatchImageSnapshot();
