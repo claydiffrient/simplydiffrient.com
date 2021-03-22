@@ -24,7 +24,7 @@ const ObjectiveFive = () => (
     <iframe
       title="Decision Making Matrix - SMART Board 7000"
       css={{
-        width: "100%"
+        width: "100%",
       }}
       src="https://clay.app.box.com/embed/s/tedjfa5h98dvrozkg5s0y3rcfq9v6v2a"
       width="800"
