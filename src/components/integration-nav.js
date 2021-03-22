@@ -5,7 +5,7 @@ import { defaultBtn, activeLinkStyles, gray } from "../utils/variables";
 const btnStyles = {
   ...defaultBtn,
   fontSize: "1em",
-  padding: "0.25em 0.5em"
+  padding: "0.25em 0.5em",
 };
 
 export default function IntegrationNav() {
@@ -16,7 +16,7 @@ export default function IntegrationNav() {
         display: "flex",
         justifyContent: "space-between",
         margin: "1em 0",
-        backgroundColor: gray
+        backgroundColor: gray,
       }}
     >
       <Link

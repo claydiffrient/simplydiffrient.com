@@ -16,27 +16,27 @@ import {
   faTwitter,
   faFacebook,
   faGooglePlus,
-  faMedium
+  faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 
 css.global("body", {
-  backgroundColor: green
+  backgroundColor: green,
 });
 
 css.global("@font-face", {
   fontFamily: "Mosk",
-  src: `url(${mosk}) format('truetype')`
+  src: `url(${mosk}) format('truetype')`,
 });
 
 const linkListStyles = {
   textDecoration: "none",
   color: green,
   "&:hover, &:focus": {
-    textDecoration: "underline"
+    textDecoration: "underline",
   },
   "&:visited": {
-    color: lighterGreen
-  }
+    color: lighterGreen,
+  },
 };
 
 const listItemStyle = { display: "inline", margin: "1rem" };
@@ -51,7 +51,7 @@ const IndexHeader = () => (
       gridTemplateColumns: "0.5fr 1fr",
       gridTemplateRows: "1fr",
       gridTemplateAreas: `"logo word"`,
-      justifyItems: "center"
+      justifyItems: "center",
     }}
   >
     <div
@@ -59,7 +59,7 @@ const IndexHeader = () => (
         gridArea: "logo",
         display: "flex",
         justifyContent: "start",
-        alignItems: "center"
+        alignItems: "center",
       }}
     >
       <img
@@ -67,7 +67,7 @@ const IndexHeader = () => (
         alt=""
         css={{
           height: "auto",
-          width: "12vw"
+          width: "12vw",
         }}
       />
     </div>
@@ -76,13 +76,13 @@ const IndexHeader = () => (
         gridArea: "word",
         display: "flex",
         justifyContent: "start",
-        alignItems: "center"
+        alignItems: "center",
       }}
     >
       <h1
         css={{
           fontSize: "8vw",
-          fontFamily: "Mosk"
+          fontFamily: "Mosk",
         }}
       >
         clay diffrient
@@ -98,13 +98,13 @@ const IndexPage = ({ data }) => (
       meta={[
         {
           name: "description",
-          content: "Personal website of Clay Diffrient"
+          content: "Personal website of Clay Diffrient",
         },
         {
           name: "keywords",
           content:
-            "clay diffrient, software, programming, edtech, instructional design"
-        }
+            "clay diffrient, software, programming, edtech, instructional design",
+        },
       ]}
     >
       <html lang="en" />
@@ -122,7 +122,7 @@ const IndexPage = ({ data }) => (
         gridTemplateAreas: `
           "attention"
           "main"
-        `
+        `,
       }}
     >
       <div
@@ -132,7 +132,7 @@ const IndexPage = ({ data }) => (
           gridTemplateColumns: "0.6fr 1.4fr",
           gridTemplateRows: "1fr",
           columnGap: "1em",
-          gridTemplateAreas: `"image headline"`
+          gridTemplateAreas: `"image headline"`,
         }}
       >
         <div css={{ gridArea: "image" }}>
@@ -141,7 +141,7 @@ const IndexPage = ({ data }) => (
             alt="Clay Diffrient"
             css={{
               height: "auto",
-              width: "21vw"
+              width: "21vw",
             }}
           />
         </div>
@@ -149,16 +149,16 @@ const IndexPage = ({ data }) => (
           <h2>My name is Clay Diffrient!</h2>
           <p
             css={{
-              fontSize: "1.2em"
+              fontSize: "1.2em",
             }}
           >
             I am{" "}
             <Link to="/about/father" css={linkListStyles}>
               a father
             </Link>
-            , a husband,
-            , a software engineer, an instructional designer, an educational
-            technologist, a volunteer teacher, and an accessibility advocate.
+            , a husband, , a software engineer, an instructional designer, an
+            educational technologist, a volunteer teacher, and an accessibility
+            advocate.
           </p>
         </div>
       </div>

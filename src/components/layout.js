@@ -18,20 +18,20 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
             {
               name: "description",
-              content: "Personal website of Clay Diffrient"
+              content: "Personal website of Clay Diffrient",
             },
             {
               name: "keywords",
               content:
-                "clay diffrient, software, programming, edtech, instructional design"
-            }
+                "clay diffrient, software, programming, edtech, instructional design",
+            },
           ]}
         >
           <html lang="en" />
@@ -42,7 +42,7 @@ const Layout = ({ children }) => (
             margin: "2rem auto",
             maxWidth: 960,
             backgroundColor: white,
-            padding: "1rem"
+            padding: "1rem",
           }}
         >
           {children}
@@ -53,7 +53,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 
 const navButtonStyle = {
   width: "100%",
-  ...defaultBtn
+  ...defaultBtn,
 };
 
 const IDET = () => (

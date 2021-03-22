@@ -13,7 +13,7 @@ const Header = () => (
       gridTemplateColumns: "0.5fr 1fr",
       gridTemplateRows: "1fr",
       gridTemplateAreas: `"logo nav"`,
-      justifyItems: "center"
+      justifyItems: "center",
     }}
   >
     <div
@@ -22,7 +22,7 @@ const Header = () => (
         flexDirection: "row",
         display: "flex",
         justifyContent: "flex-start",
-        justifySelf: "start"
+        justifySelf: "start",
       }}
     >
       <Link
@@ -34,8 +34,8 @@ const Header = () => (
           display: "flex",
           flexDirection: "row",
           "&:hover": {
-            textDecoration: "underline"
-          }
+            textDecoration: "underline",
+          },
         }}
       >
         <img
@@ -46,7 +46,7 @@ const Header = () => (
             width: "4.25vw",
             display: "inline-block",
             marginBottom: 0,
-            marginRight: "1em"
+            marginRight: "1em",
           }}
         />{" "}
         <h1
@@ -56,7 +56,7 @@ const Header = () => (
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            marginBottom: 0
+            marginBottom: 0,
           }}
         >
           clay diffrient{" "}
@@ -69,7 +69,7 @@ const Header = () => (
         display: "flex",
         justifyContent: "start",
         justifySelf: "start",
-        alignItems: "center"
+        alignItems: "center",
       }}
     >
       <Link css={defaultBtn} to="/idet" activeStyle={activeLinkStyles}>

@@ -17,22 +17,22 @@ export const defaultBtn = {
   "&:hover, &:focus": {
     backgroundColor: linkGreen,
     // opacity: "0.7",
-    color: white
-  }
+    color: white,
+  },
 };
 
 export const activeLinkStyles = {
   backgroundColor: linkGreen,
-  color: white
+  color: white,
 };
 
 export const linkStyles = {
   textDecoration: "none",
   color: linkGreen,
   "&:hover, &:focus": {
-    textDecoration: "underline"
+    textDecoration: "underline",
   },
   "&:visited": {
-    color: lighterGreen
-  }
+    color: lighterGreen,
+  },
 };
