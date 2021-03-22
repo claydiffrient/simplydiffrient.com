@@ -6,7 +6,7 @@ import { graphql, Link } from "gatsby";
 const blogPostIndexEntry = {
   backgroundColor: "#efefef",
   padding: "0.5rem",
-  marginBottom: "1rem"
+  marginBottom: "1rem",
 };
 
 const UtahLegislation = ({ data }) => (
