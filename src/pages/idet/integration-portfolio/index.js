@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 const navBtnStyle = {
   ...defaultBtn,
   fontSize: "0.9em",
-  width: "100%"
+  width: "100%",
 };
 
 const IntegrationPortfolio = () => (
