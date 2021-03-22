@@ -23,7 +23,7 @@ const ObjectiveOne = () => (
     <iframe
       title="Technology Integration Matrix"
       css={{
-        width: "100%"
+        width: "100%",
       }}
       src="https://clay.app.box.com/embed/s/xcikhugyal2th42os92hnoag9h8swe8n"
       width="500"
