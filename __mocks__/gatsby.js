@@ -11,8 +11,8 @@ module.exports = {
     return React.createElement("a", {
       ...rest,
       style,
-      href: to
+      href: to,
     });
   }),
-  StaticQuery: jest.fn()
+  StaticQuery: jest.fn(),
 };
