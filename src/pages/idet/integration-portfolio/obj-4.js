@@ -27,18 +27,18 @@ const ObjectiveFour = () => (
     <div
       css={{
         display: "flex",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
       }}
     >
       <div
         css={{
-          flex: 1
+          flex: 1,
         }}
       >
         <img
           css={{
             width: "100%",
-            height: "auto"
+            height: "auto",
           }}
           src={ryanResponseToClay}
           alt="Example of a discussion where Ryan responds to Clay"
@@ -46,13 +46,13 @@ const ObjectiveFour = () => (
       </div>
       <div
         css={{
-          flex: 1
+          flex: 1,
         }}
       >
         <img
           css={{
             width: "100%",
-            height: "auto"
+            height: "auto",
           }}
           src={clayResponseToKyle}
           alt="Example of a discussion where Clay responds to Kyle"

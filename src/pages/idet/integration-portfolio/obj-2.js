@@ -24,7 +24,7 @@ const ObjectiveTwo = () => (
     <iframe
       title="Programming Decisions PowerPoint"
       css={{
-        width: "100%"
+        width: "100%",
       }}
       src="https://clay.app.box.com/embed/s/6sbozh1paz7rbwkckowantmfnle8fybf"
       width="500"
