@@ -1,22 +1,22 @@
 module.exports = {
   siteMetadata: {
     title: "Clay Diffrient",
-    siteUrl: "https://simplydiffrient.com"
+    siteUrl: "https://simplydiffrient.com",
   },
   plugins: [
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "assets",
-        path: `${__dirname}/src/assets/`
-      }
+        path: `${__dirname}/src/assets/`,
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
-        path: `${__dirname}/src/posts/`
-      }
+        path: `${__dirname}/src/posts/`,
+      },
     },
     "gatsby-transformer-sharp",
     "gatsby-transformer-remark",
@@ -33,10 +33,10 @@ module.exports = {
         background_color: "#397837",
         theme_color: "#397837",
         display: "browser",
-        icon: "src/assets/logo.svg" // This path is relative to the root of the site.
-      }
+        icon: "src/assets/logo.svg", // This path is relative to the root of the site.
+      },
     },
     "gatsby-plugin-react-axe",
-    "gatsby-plugin-offline"
-  ]
+    "gatsby-plugin-offline",
+  ],
 };
