@@ -35,7 +35,7 @@ const Father = ({ data }) => (
 );
 
 Father.propTypes = {
-  data: object
+  data: object,
 };
 
 export default Father;
