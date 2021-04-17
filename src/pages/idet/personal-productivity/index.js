@@ -1,15 +1,8 @@
 import React from "react";
 import Layout from "../../../components/layout";
 import Helmet from "react-helmet";
-import { defaultBtn } from "../../../utils/variables";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
-
-const navBtnStyle = {
-  ...defaultBtn,
-  fontSize: "0.9em",
-  width: "100%",
-};
 
 const PersonalProductivity = ({ data }) => (
   <Layout>
