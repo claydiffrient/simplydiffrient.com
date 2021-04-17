@@ -8,7 +8,7 @@ import Img from "gatsby-image";
 const navBtnStyle = {
   ...defaultBtn,
   fontSize: "0.9em",
-  width: "100%"
+  width: "100%",
 };
 
 const PersonalProductivity = ({ data }) => (
@@ -97,7 +97,7 @@ const PersonalProductivity = ({ data }) => (
           display: "inline-block",
           float: "left",
           margin: "0.5em",
-          width: "50%"
+          width: "50%",
         }}
       >
         <Img
@@ -116,7 +116,7 @@ const PersonalProductivity = ({ data }) => (
           display: "inline-block",
           float: "left",
           margin: "0.5em",
-          width: "50%"
+          width: "50%",
         }}
       >
         <Img
@@ -168,7 +168,7 @@ const PersonalProductivity = ({ data }) => (
         display: "inline-block",
         float: "left",
         margin: "0.5em",
-        width: "50%"
+        width: "50%",
       }}
     >
       <Img
