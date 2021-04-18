@@ -2,7 +2,7 @@ import React from "react";
 import { green, white, lighterGreen } from "../utils/variables";
 import logo from "../assets/logo.svg";
 import mosk from "../assets/mosk-ultra-bold.ttf";
-import { Global, css } from "@emotion/react";
+import { Global } from "@emotion/react";
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
