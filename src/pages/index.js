@@ -142,7 +142,8 @@ const IndexPage = ({ data }) => (
             css={{
               height: "auto",
               width: "21vw",
-            }} />
+            }}
+          />
         </div>
         <div css={{ gridArea: "headline" }}>
           <h2>My name is Clay Diffrient!</h2>
@@ -225,11 +226,12 @@ const IndexPage = ({ data }) => (
 
 export default IndexPage;
 
-export const query = graphql`query IndexQuery {
-  clayImg: file(name: {eq: "clay"}) {
-    childImageSharp {
-      gatsbyImageData(width: 250, layout: CONSTRAINED)
+export const query = graphql`
+  query IndexQuery {
+    clayImg: file(name: { eq: "clay" }) {
+      childImageSharp {
+        gatsbyImageData(width: 250, layout: CONSTRAINED)
+      }
     }
   }
-}
 `;

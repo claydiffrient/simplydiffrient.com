@@ -22,13 +22,17 @@ const Father = ({ data }) => (
       </p>
       <GatsbyImage
         image={data.file.childImageSharp.gatsbyImageData}
-        alt="Clay, Roger, and Beau" />
+        alt="Clay, Roger, and Beau"
+      />
       <p>
         This next picture is my daughter. She’s the latest addition to the
         family and she is a true joy to be around. I’m excited to get to know
         her personality more and more as she gets older.
       </p>
-      <GatsbyImage image={data.mer.childImageSharp.gatsbyImageData} alt="Meredith" />
+      <GatsbyImage
+        image={data.mer.childImageSharp.gatsbyImageData}
+        alt="Meredith"
+      />
     </>
   </Layout>
 );
@@ -39,16 +43,17 @@ Father.propTypes = {
 
 export default Father;
 
-export const query = graphql`query FatherQuery {
-  file: file(name: {eq: "boys-and-clay"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
+export const query = graphql`
+  query FatherQuery {
+    file: file(name: { eq: "boys-and-clay" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    mer: file(name: { eq: "mer" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
   }
-  mer: file(name: {eq: "mer"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH)
-    }
-  }
-}
 `;

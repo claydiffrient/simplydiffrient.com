@@ -53,7 +53,8 @@ const PersonalProductivity = ({ data }) => (
       <figure css={{ display: "inline-block", float: "left", margin: "0.5em" }}>
         <GatsbyImage
           image={data.sidebar.childImageSharp.gatsbyImageData}
-          alt="Evernote sidebar with action pending, completed, and inbox notebooks" />
+          alt="Evernote sidebar with action pending, completed, and inbox notebooks"
+        />
         <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
           My GTD stack of notebooks in my Evernote sidebar.
         </figcaption>
@@ -70,7 +71,8 @@ const PersonalProductivity = ({ data }) => (
       >
         <GatsbyImage
           image={data.tags.childImageSharp.gatsbyImageData}
-          alt="Evernote tags with Who, What, Where, and When sections" />
+          alt="Evernote tags with Who, What, Where, and When sections"
+        />
         <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
           My GTD-related tags in Evernote
         </figcaption>
@@ -93,7 +95,8 @@ const PersonalProductivity = ({ data }) => (
       >
         <GatsbyImage
           image={data.nosubtasks.childImageSharp.gatsbyImageData}
-          alt="Evernote note to Organize and Print Tax Documents" />
+          alt="Evernote note to Organize and Print Tax Documents"
+        />
         <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
           Task note with no subtasks
         </figcaption>
@@ -111,7 +114,8 @@ const PersonalProductivity = ({ data }) => (
       >
         <GatsbyImage
           image={data.subtasks.childImageSharp.gatsbyImageData}
-          alt="Evernote note to do home repairs" />
+          alt="Evernote note to do home repairs"
+        />
         <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
           Task note with subtasks
         </figcaption>
@@ -162,7 +166,8 @@ const PersonalProductivity = ({ data }) => (
     >
       <GatsbyImage
         image={data.inboxzero.childImageSharp.gatsbyImageData}
-        alt="Gmail Inbox showing no emails" />
+        alt="Gmail Inbox showing no emails"
+      />
       <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
         Inbox Zero!
       </figcaption>
@@ -200,31 +205,32 @@ const PersonalProductivity = ({ data }) => (
 
 export default PersonalProductivity;
 
-export const query = graphql`{
-  sidebar: file(name: {eq: "evernote-gtd-sidebar"}) {
-    childImageSharp {
-      gatsbyImageData(width: 300, layout: FIXED)
+export const query = graphql`
+  {
+    sidebar: file(name: { eq: "evernote-gtd-sidebar" }) {
+      childImageSharp {
+        gatsbyImageData(width: 300, layout: FIXED)
+      }
+    }
+    tags: file(name: { eq: "evernote-gtd-tags" }) {
+      childImageSharp {
+        gatsbyImageData(width: 200, layout: FIXED)
+      }
+    }
+    nosubtasks: file(name: { eq: "evernote-gtd-note-no-subtasks" }) {
+      childImageSharp {
+        gatsbyImageData(width: 400, layout: CONSTRAINED)
+      }
+    }
+    subtasks: file(name: { eq: "evernote-gtd-subtasks" }) {
+      childImageSharp {
+        gatsbyImageData(width: 400, layout: CONSTRAINED)
+      }
+    }
+    inboxzero: file(name: { eq: "inbox-zero" }) {
+      childImageSharp {
+        gatsbyImageData(width: 400, layout: CONSTRAINED)
+      }
     }
   }
-  tags: file(name: {eq: "evernote-gtd-tags"}) {
-    childImageSharp {
-      gatsbyImageData(width: 200, layout: FIXED)
-    }
-  }
-  nosubtasks: file(name: {eq: "evernote-gtd-note-no-subtasks"}) {
-    childImageSharp {
-      gatsbyImageData(width: 400, layout: CONSTRAINED)
-    }
-  }
-  subtasks: file(name: {eq: "evernote-gtd-subtasks"}) {
-    childImageSharp {
-      gatsbyImageData(width: 400, layout: CONSTRAINED)
-    }
-  }
-  inboxzero: file(name: {eq: "inbox-zero"}) {
-    childImageSharp {
-      gatsbyImageData(width: 400, layout: CONSTRAINED)
-    }
-  }
-}
 `;
