@@ -2,7 +2,7 @@ import React from "react";
 import { green, white, lighterGreen } from "../utils/variables";
 import logo from "../assets/logo.svg";
 import mosk from "../assets/mosk-ultra-bold.ttf";
-import { css } from "glamor";
+import { Global } from "@emotion/react";
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
@@ -18,15 +18,6 @@ import {
   faGooglePlus,
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
-
-css.global("body", {
-  backgroundColor: green,
-});
-
-css.global("@font-face", {
-  fontFamily: "Mosk",
-  src: `url(${mosk}) format('truetype')`,
-});
 
 const linkListStyles = {
   textDecoration: "none",
@@ -93,6 +84,17 @@ const IndexHeader = () => (
 
 const IndexPage = ({ data }) => (
   <>
+    <Global
+      styles={{
+        body: {
+          backgroundColor: green,
+        },
+        "@font-face": {
+          fontFamily: "Mosk",
+          src: `url(${mosk}) format('truetype)`,
+        },
+      }}
+    />
     <Helmet
       title="Clay Diffrient"
       meta={[

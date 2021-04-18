@@ -13,7 +13,7 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: "",
   },
-  snapshotSerializers: ["jest-glamor-react"],
+  snapshotSerializers: ["@emotion/jest/serializer"],
   testURL: "http://localhost",
   setupFiles: [
     "<rootDir>/loadershim.js",

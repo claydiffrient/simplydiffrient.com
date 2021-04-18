@@ -23,7 +23,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-glamor",
+    "gatsby-plugin-emotion",
     "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-manifest`,
