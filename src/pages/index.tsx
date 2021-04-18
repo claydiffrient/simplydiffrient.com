@@ -19,6 +19,17 @@ import {
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 
+interface Props {
+  data: {
+    clayImg: {
+      childImageSharp: {
+        gatsbyImageData: any
+      }
+    }
+  }
+}
+
+
 const linkListStyles = {
   textDecoration: "none",
   color: green,
@@ -82,7 +93,7 @@ const IndexHeader = () => (
   </header>
 );
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data } : Props) => (
   <>
     <Global
       styles={{
