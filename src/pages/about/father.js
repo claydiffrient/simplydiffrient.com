@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import Helmet from "react-helmet";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
 import { object } from "prop-types";
 
@@ -20,16 +20,15 @@ const Father = ({ data }) => (
         loves playing Minecraft and talking all about it. The youngest is
         obsessed with Iron Man, both the comic book character and the song!
       </p>
-      <Img
-        fluid={data.file.childImageSharp.fluid}
-        alt="Clay, Roger, and Beau"
-      />
+      <GatsbyImage
+        image={data.file.childImageSharp.gatsbyImageData}
+        alt="Clay, Roger, and Beau" />
       <p>
         This next picture is my daughter. She’s the latest addition to the
         family and she is a true joy to be around. I’m excited to get to know
         her personality more and more as she gets older.
       </p>
-      <Img fluid={data.mer.childImageSharp.fluid} alt="Meredith" />
+      <GatsbyImage image={data.mer.childImageSharp.gatsbyImageData} alt="Meredith" />
     </>
   </Layout>
 );
@@ -40,23 +39,16 @@ Father.propTypes = {
 
 export default Father;
 
-export const query = graphql`
-  query FatherQuery {
-    file: file(name: { eq: "boys-and-clay" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    mer: file(name: { eq: "mer" }) {
-      childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const query = graphql`query FatherQuery {
+  file: file(name: {eq: "boys-and-clay"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+  mer: file(name: {eq: "mer"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+}
 `;
