@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../../components/layout";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const PersonalProductivity = ({ data }) => (
   <Layout>
@@ -51,8 +51,8 @@ const PersonalProductivity = ({ data }) => (
       already planned to modify my email flow which I detail in the next
       section.
       <figure css={{ display: "inline-block", float: "left", margin: "0.5em" }}>
-        <Img
-          fixed={data.sidebar.childImageSharp.fixed}
+        <GatsbyImage
+          image={data.sidebar.childImageSharp.gatsbyImageData}
           alt="Evernote sidebar with action pending, completed, and inbox notebooks"
         />
         <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
@@ -69,8 +69,8 @@ const PersonalProductivity = ({ data }) => (
       <figure
         css={{ display: "inline-block", float: "right", margin: "0.5em" }}
       >
-        <Img
-          fixed={data.tags.childImageSharp.fixed}
+        <GatsbyImage
+          image={data.tags.childImageSharp.gatsbyImageData}
           alt="Evernote tags with Who, What, Where, and When sections"
         />
         <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
@@ -93,8 +93,8 @@ const PersonalProductivity = ({ data }) => (
           width: "50%",
         }}
       >
-        <Img
-          fluid={data.nosubtasks.childImageSharp.fluid}
+        <GatsbyImage
+          image={data.nosubtasks.childImageSharp.gatsbyImageData}
           alt="Evernote note to Organize and Print Tax Documents"
         />
         <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
@@ -112,8 +112,8 @@ const PersonalProductivity = ({ data }) => (
           width: "50%",
         }}
       >
-        <Img
-          fluid={data.subtasks.childImageSharp.fluid}
+        <GatsbyImage
+          image={data.subtasks.childImageSharp.gatsbyImageData}
           alt="Evernote note to do home repairs"
         />
         <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
@@ -164,8 +164,8 @@ const PersonalProductivity = ({ data }) => (
         width: "50%",
       }}
     >
-      <Img
-        fluid={data.inboxzero.childImageSharp.fluid}
+      <GatsbyImage
+        image={data.inboxzero.childImageSharp.gatsbyImageData}
         alt="Gmail Inbox showing no emails"
       />
       <figcaption css={{ fontSize: "80%", color: "#6c757d" }}>
@@ -206,40 +206,30 @@ const PersonalProductivity = ({ data }) => (
 export default PersonalProductivity;
 
 export const query = graphql`
-  query {
+  {
     sidebar: file(name: { eq: "evernote-gtd-sidebar" }) {
       childImageSharp {
-        fixed(width: 300) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
+        gatsbyImageData(width: 300, layout: FIXED)
       }
     }
     tags: file(name: { eq: "evernote-gtd-tags" }) {
       childImageSharp {
-        fixed(width: 200) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
+        gatsbyImageData(width: 200, layout: FIXED)
       }
     }
     nosubtasks: file(name: { eq: "evernote-gtd-note-no-subtasks" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(width: 400, layout: CONSTRAINED)
       }
     }
     subtasks: file(name: { eq: "evernote-gtd-subtasks" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(width: 400, layout: CONSTRAINED)
       }
     }
     inboxzero: file(name: { eq: "inbox-zero" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(width: 400, layout: CONSTRAINED)
       }
     }
   }

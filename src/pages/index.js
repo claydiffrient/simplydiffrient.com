@@ -4,7 +4,7 @@ import logo from "../assets/logo.svg";
 import mosk from "../assets/mosk-ultra-bold.ttf";
 import { css } from "glamor";
 import { Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import "../components/layout.css";
@@ -136,8 +136,8 @@ const IndexPage = ({ data }) => (
         }}
       >
         <div css={{ gridArea: "image" }}>
-          <Img
-            fluid={data.clayImg.childImageSharp.fluid}
+          <GatsbyImage
+            image={data.clayImg.childImageSharp.gatsbyImageData}
             alt="Clay Diffrient"
             css={{
               height: "auto",
@@ -230,11 +230,7 @@ export const query = graphql`
   query IndexQuery {
     clayImg: file(name: { eq: "clay" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 250) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 250, layout: CONSTRAINED)
       }
     }
   }
