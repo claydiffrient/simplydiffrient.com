@@ -2,7 +2,8 @@
   "extends": [
     "config:base",
     ":automergeAll",
-    ":automergeBranchPush",
-    ":automergeRequireAllStatusChecks"
+    ":automergeBranch",
+    ":automergeRequireAllStatusChecks",
+    ":dependencyDashboard"
   ]
 }
