@@ -1,6 +1,6 @@
 module.exports = {
   transform: {
-    "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js",
+    "^.+\\.(j|t)sx?$": "<rootDir>/jest-preprocess.js",
   },
   testRegex: "/.*(__tests__\\/.*)|(.*(test|spec))\\.jsx?$",
   moduleNameMapper: {

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { green, white, lighterGreen } from "../utils/variables";
 import logo from "../assets/logo.svg";
 import mosk from "../assets/mosk-ultra-bold.ttf";
@@ -18,6 +18,17 @@ import {
   faGooglePlus,
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
+
+interface Props {
+  data: {
+    clayImg: {
+      childImageSharp: {
+        gatsbyImageData: any
+      }
+    }
+  }
+}
+
 
 const linkListStyles = {
   textDecoration: "none",
@@ -82,7 +93,7 @@ const IndexHeader = () => (
   </header>
 );
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data } : Props) => (
   <>
     <Global
       styles={{
