@@ -2,8 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-import "@fontsource/signika";
-import { white } from "../utils/variables";
+import "@fontsource/signika/400.css";
+import { white, green } from "../utils/variables";
+import { Global } from "@emotion/react";
 
 import Header from "./header";
 import "./layout.css";
@@ -38,6 +39,13 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <Global
+          styles={{
+            body: {
+              backgroundColor: green,
+            },
+          }}
+        />
         <main
           css={{
             margin: "2rem auto",

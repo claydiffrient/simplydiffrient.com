@@ -93,13 +93,6 @@ const IndexHeader = () => (
 
 const IndexPage = ({ data }: Props) => (
   <>
-    <Global
-      styles={{
-        body: {
-          backgroundColor: green,
-        },
-      }}
-    />
     <Helmet
       title="Clay Diffrient"
       meta={[

@@ -26,7 +26,6 @@ const Header = () => (
       }}
     >
       <Link
-        exact
         to="/"
         css={{
           textDecoration: "none",
