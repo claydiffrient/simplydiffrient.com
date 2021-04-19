@@ -109,6 +109,13 @@ const IndexPage = ({ data }: Props) => (
     >
       <html lang="en" />
     </Helmet>
+    <Global
+      styles={{
+        body: {
+          backgroundColor: green,
+        },
+      }}
+    />
     <IndexHeader />
     <main
       css={{
