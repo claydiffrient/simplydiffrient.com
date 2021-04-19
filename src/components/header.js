@@ -26,7 +26,6 @@ const Header = () => (
       }}
     >
       <Link
-        exact
         to="/"
         css={{
           textDecoration: "none",
@@ -52,7 +51,7 @@ const Header = () => (
         <h1
           css={{
             fontSize: "3vw",
-            fontFamily: "Mosk",
+            fontFamily: "Signika",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",

@@ -1,7 +1,6 @@
 import * as React from "react";
 import { green, white, lighterGreen } from "../utils/variables";
 import logo from "../assets/logo.svg";
-import mosk from "../assets/mosk-ultra-bold.ttf";
 import { Global } from "@emotion/react";
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -23,12 +22,11 @@ interface Props {
   data: {
     clayImg: {
       childImageSharp: {
-        gatsbyImageData: any
-      }
-    }
-  }
+        gatsbyImageData: any;
+      };
+    };
+  };
 }
-
 
 const linkListStyles = {
   textDecoration: "none",
@@ -83,8 +81,8 @@ const IndexHeader = () => (
     >
       <h1
         css={{
-          fontSize: "8vw",
-          fontFamily: "Mosk",
+          fontSize: "11vw",
+          fontFamily: "Signika",
         }}
       >
         clay diffrient
@@ -93,19 +91,8 @@ const IndexHeader = () => (
   </header>
 );
 
-const IndexPage = ({ data } : Props) => (
+const IndexPage = ({ data }: Props) => (
   <>
-    <Global
-      styles={{
-        body: {
-          backgroundColor: green,
-        },
-        "@font-face": {
-          fontFamily: "Mosk",
-          src: `url(${mosk}) format('truetype)`,
-        },
-      }}
-    />
     <Helmet
       title="Clay Diffrient"
       meta={[
@@ -122,6 +109,13 @@ const IndexPage = ({ data } : Props) => (
     >
       <html lang="en" />
     </Helmet>
+    <Global
+      styles={{
+        body: {
+          backgroundColor: green,
+        },
+      }}
+    />
     <IndexHeader />
     <main
       css={{
@@ -131,7 +125,7 @@ const IndexPage = ({ data } : Props) => (
         padding: "1rem",
         display: "grid",
         gridTemplateColumns: "1fr",
-        gridTemplateRows: "1fr 1fr",
+        gridTemplateRows: "max-content max-content",
         gridTemplateAreas: `
           "attention"
           "main"
@@ -169,22 +163,42 @@ const IndexPage = ({ data } : Props) => (
             <Link to="/about/father" css={linkListStyles}>
               a father
             </Link>
-            , a husband, , a software engineer, an instructional designer, an
-            educational technologist, a volunteer teacher, and an accessibility
-            advocate.
+            , a software engineer, an instructional designer, an educational
+            technologist, a volunteer teacher, and an accessibility advocate.
           </p>
         </div>
       </div>
       <div css={{ gridArea: "main" }}>
         <p>
-          I’m a senior software engineer at Instructure. I work on the Canvas
-          Core Services Front End team helping architect the front end of the
-          Canvas Learning Management System. I am passionate about education
-          &mdash; specifically the application of technology to enhance
-          education! I completed a Bachelor's in computer science at Brigham
-          Young University &mdash; Idaho and more recently completed a Master's
-          of Education in Educational Psychology (IDET) at the University of
-          Utah.
+          I'm a senior software engineer at{" "}
+          <a css={linkListStyles} href="https://derivita.com">
+            Derivita
+          </a>
+          , a first of its kind STEM technology platform and complete computer
+          algebra system. At Derivita, I primarily work on the front end of our
+          app using lit-html, Google Closure Components, and Material Design
+          Lite all in TypeScript. Ocassionally I've been known to reluctantly
+          dabble in the Go code that powers the backend.
+        </p>
+        <p>
+          Before working at Derivita, I climbed the engineering ranks at{" "}
+          <a css={linkListStyles} href="https://instructure.com">
+            Instructure
+          </a>
+          . At the end of my tenure there, I was one of the top contributors to
+          the front end of the{" "}
+          <a css={linkListStyles} href="https://instructure.com/canvas">
+            Canvas
+          </a>{" "}
+          Learning Management System primarily focused on front end
+          architecture.
+        </p>
+        <p>
+          I am passionate about education &mdash; specifically the application
+          of technology to enhance education! I completed a Bachelor's of
+          Science in Computer Science at Brigham Young University &mdash; Idaho
+          and more recently completed a Master's of Education in Educational
+          Psychology (IDET) at the University of Utah.
         </p>
         <p>
           Sometimes I get a little busy and don’t post much here or make things
@@ -216,14 +230,6 @@ const IndexPage = ({ data } : Props) => (
               href="https://www.facebook.com/clay.diffrient"
             >
               <FontAwesomeIcon icon={faFacebook} /> Facebook
-            </a>
-          </li>
-          <li css={listItemStyle}>
-            <a
-              css={linkListStyles}
-              href="https://plus.google.com/+ClayDiffrient"
-            >
-              <FontAwesomeIcon icon={faGooglePlus} /> Google+
             </a>
           </li>
           <li css={listItemStyle}>
