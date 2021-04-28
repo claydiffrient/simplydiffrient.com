@@ -74,7 +74,7 @@
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-react": "7.23.2",
     "eslint-plugin-security": "1.4.0",
-    "gatsby-plugin-sitemap": "3.3.0",
+    "gatsby-plugin-sitemap": "4.0.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "26.6.3",
     "jest-axe": "4.1.0",
