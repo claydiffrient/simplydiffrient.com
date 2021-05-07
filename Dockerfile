@@ -1,4 +1,4 @@
-FROM node:10 as build
+FROM node:16 as build
 ENV APP_HOME /usr/src/app/
 RUN mkdir -p $APP_HOME
 WORKDIR $APP_HOME
