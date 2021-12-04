@@ -80,7 +80,7 @@
     "jest-axe": "5.0.1",
     "jest-image-snapshot": "4.5.1",
     "postcss": "8.4.4",
-    "prettier": "2.5.0",
+    "prettier": "2.5.1",
     "puppeteer": "12.0.1",
     "react-test-renderer": "17.0.2",
     "request": "2.88.2",
